@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Visitas Digital - Luan Eduardo</title>
+    
+    <!-- Carrega o Tailwind CSS para o design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Carrega a fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Define a fonte Inter como padrão para todo o site */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilo para um efeito de sombra mais suave */
+        .custom-shadow {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        .custom-shadow:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Container Principal do Cartão -->
+    <div class="bg-white w-full max-w-md mx-auto rounded-xl overflow-hidden shadow-lg">
+        
+        <!-- Seção da Imagem de Fundo e Foto de Perfil -->
+        <div class="relative">
+            <img 
+                src="https://i.postimg.cc/bYVLv3t3/d4777d0b-8e53-4ecb-8d0d-4ae7fb51863c.jpg" 
+                alt="Imagem de fundo do consultório" 
+                class="w-full h-48 object-cover">
+            
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+
+            <div class="absolute -bottom-16 left-1/2 -translate-x-1/2">
+                <img 
+                    src="https://i.postimg.cc/Rh2gbkD0/image-1.png" 
+                    alt="Foto de Perfil do Profissional" 
+                    class="rounded-full w-32 h-32 object-cover border-4 border-white shadow-md">
+            </div>
+        </div>
+
+        <!-- Seção de Nomes e Títulos -->
+        <div class="pt-20 pb-6 px-6 text-center">
+            <h2 class="text-sm text-gray-500 tracking-widest uppercase">Psicólogo</h2>
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mt-1">Luan Eduardo</h1>
+        </div>
+
+        <!-- Seção dos Botões com Links -->
+        <div class="px-6 pb-6 flex flex-col space-y-4">
+            <a 
+                href="https://api.whatsapp.com/send/?phone=5583996029910&text=Eu+quero+agendar+minha+sess%C3%A3o+de+terapia&type=phone_number&app_absent=0" 
+                target="_blank"
+                class="w-full bg-white text-center text-gray-700 font-semibold py-3 px-4 border border-gray-300 rounded-full transition-transform transform hover:scale-105 custom-shadow">
+                Marque sua sessão
+            </a>
+            
+            <a 
+                href="https://maps.app.goo.gl/hLksN3A6CarC8zh97" 
+                target="_blank"
+                class="w-full bg-white text-center text-gray-700 font-semibold py-3 px-4 border border-gray-300 rounded-full transition-transform transform hover:scale-105 custom-shadow">
+                Nosso Endereço
+            </a>
+            
+            <!-- Este botão leva para a página "sobre.html" -->
+            <a 
+                href="./sobre.html" 
+                class="w-full bg-white text-center text-gray-700 font-semibold py-3 px-4 border border-gray-300 rounded-full transition-transform transform hover:scale-105 custom-shadow">
+                Sobre mim
+            </a>
+        </div>
+        
+        <!-- Rodapé -->
+        <div class="pb-8 pt-2 flex items-center justify-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fingerprint text-gray-400" viewBox="0 0 16 16">
+                <path d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z"/>
+                <path d="M6.06 7a.5.5 0 0 1 .5.5v.74a14.5 14.5 0 0 1-.523 3.416l-1.115 3.844a.5.5 0 1 1-.96-.278l1.115-3.844a13.5 13.5 0 0 0 .47-3.138V7.5a.5.5 0 0 1 .5-.5Zm-1.808 1.21a.5.5 0 0 1 .5.5v.92c0 .34-.028.675-.084 1.004l-1.06 4.146a.5.5 0 0 1-.958-.29l1.06-4.146A12.03 12.03 0 0 0 4.75 8.71V8.21a.5.5 0 0 1 .5-.5Zm3.564 5.243a.5.5 0 0 1 .37.83l-1.24 2.454a.5.5 0 0 1-.86-.434l1.24-2.454a.5.5 0 0 1 .49-.396Zm-2.405-3.51a.5.5 0 0 1 .5.5v.646a13.2 13.2 0 0 1-.345 2.87l-1.286 4.812a.5.5 0 0 1-.958-.255l1.286-4.812A12.2 12.2 0 0 0 7.75 9.356V8.71a.5.5 0 0 1 .5-.5Zm-3.151-.25a.5.5 0 0 1 .5.5v.563c0 .399-.037.79-.109 1.173l-1.143 4.826a.5.5 0 1 1-.96-.228L3.08 10.3c.06-.32.091-.646.091-.973V8.21a.5.5 0 0 1 .5-.5Zm9.414 1.012a.5.5 0 0 1-.012.707l-2.63 2.63a.5.5 0 1 1-.707-.707l2.63-2.63a.5.5 0 0 1 .719-.012Zm-6.52-4.12a.5.5 0 0 1 .5.5v.588a9.97 9.97 0 0 1-.226 2.18l-1.332 4.965a.5.5 0 0 1-.956-.256l1.332-4.965a8.97 8.97 0 0 0 .193-1.93V7.21a.5.5 0 0 1 .5-.5Zm4.202-.533a.5.5 0 0 1 .5.5v.716a8.973 8.973 0 0 1-.259 2.46l-1.12 4.186a.5.5 0 1 1-.956-.256l1.12-4.186a7.973 7.973 0 0 0 .227-2.19V7.5a.5.5 0 0 1 .5-.5Zm2.023.633a.5.5 0 0 1 .5.5v.632a8.03 8.03 0 0 1-.272 2.416l-1.034 4.394a.5.5 0 1 1-.96-.226l1.034-4.394a7.03 7.03 0 0 0 .24-2.19V8.71a.5.5 0 0 1 .5-.5Z"/>
+            </svg>
+            <p class="text-xs text-gray-400">Clique para ser redirecionado</p>
+        </div>
+    </div>
+</body>
+</html>
